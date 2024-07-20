@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Estatus alumno</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Calculo de compras </h1>
+    <form action="/calculoCompras" method="POST">
+        <label for="nombre">Ingresa tu nombre</label><br>
+        <input type="text" id="nombre" name="nombre">
+        <br><br>
+        <label for="edad">Ingresa tu edad </label><br>
+        <input type="number" id="edad" name="edad" min="1" required>
+        <br><br>
+        <label for="tarros_pintura">Ingresa la cantidad de tarros de pintura a comprar </label><br>
+        <input type="number" id="tarros_pintura" name="tarros_pintura" min="0" required>
+        <br><br>
+        <button type="submit">Calcular</button>
+    </form>
+    {% if nombre is not none and total is not none and descuento is not none and cobro is not none %}
+    <div>
+        <p>Nombre del cliente: {{ nombre}}</p> 
+    </div>
+    <div>
+        <p>Total sin descuento: ${{ total }}</p> 
+    </div>
+    <div>
+        <p>El descuento es: ${{ descuento }}</p> 
+    </div>
+    <div>
+        <p>El total a pagar es: ${{ cobro }}</p> 
+    </div>
+    
+    {% endif %}
+    
+</body>
+</html>

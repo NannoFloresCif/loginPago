@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button_morado {
+    background-color: purple;
+}
+
+.button_verde {
+    background-color: green;
+}
+
+/*body {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}*/
